@@ -11,7 +11,7 @@ const { getHTML, getCSS, getJS } = require('./controller')
 app.get('/', getHTML)
 app.get('/css', getCSS)
 app.get('/js', getJS)
-//app.use(express.static('public'))
+app.use(express.static('public'))
 
 const port = process.env.PORT || 4000
 
